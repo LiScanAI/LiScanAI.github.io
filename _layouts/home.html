@@ -3,17 +3,11 @@ layout: page
 ---
 
 <div class="post-content" style="text-align: justify;">
-  &nbsp;&nbsp;&nbsp;Numerous third-party libraries introduced into client projects are
-  not actually required, resulting in modern software being gradually
-  bloated. Software developers may spend much unnecessary effort
-  to manage the bloated dependencies: keeping the library versions
-  up-to-date, making sure that heterogeneous licenses are compatible,
-  and resolving dependency conflict or vulnerability issues.
-  However, the prior debloating techniques can easily produce
-  false alarms of bloated dependencies since they are less effective
-  in <strong>analyzing Java reflections</strong>. Besides, the solutions given by the
-  existing approaches for removing bloated dependencies may induce
-  new issues that are not conducive to dependency management. <br/>
+  &nbsp;&nbsp;&nbsp;Open-source AI-specific licenses represent a new form of social contract in the digital age,
+  introducing complexities and multidimensional challenges for license compatibility detection. Unlike traditional SPDX licenses, 
+  open-source AI models adopt a hierarchical licensing framework encompassing global licenses and component licenses (</strong>Code, </strong>Weights, </strong>Data), 
+  along with novel clauses such as technical constraints, commercial restrictions, and ethical responsibilities.
+  These unique characteristics render conventional license compatibility detection tools ineffective. <br/>
   &nbsp;&nbsp;&nbsp;To address the above limitations, in this paper, we developed a technique,
   <a href="https://slimming-fat.github.io/SLIMMING/"><strong>SLIMMING</strong></a>, to remove bloated dependencies from software
   projects reliably. Slimming statically analyzes the Java reflections
