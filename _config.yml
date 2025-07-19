@@ -20,7 +20,7 @@ timezone: Asia/Shanghai
 
 title: LiScan.AI # the main title
 
-tagline: Slimming Configuration Explore # it will display as the sub-title
+tagline: Detecting License Incompatibilities for AI Models # it will display as the sub-title
 
 # description: >- # used by seo meta and the atom feed
 #   A minimal, responsive and feature-rich Jekyll theme for technical writing.
