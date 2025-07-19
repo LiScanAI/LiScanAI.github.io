@@ -5,29 +5,22 @@ layout: page
 <div class="post-content" style="text-align: justify;">
   &nbsp;&nbsp;&nbsp;Open-source AI-specific licenses represent a new form of social contract in the digital age,
   introducing complexities and multidimensional challenges for license compatibility detection. Unlike traditional SPDX licenses, 
-  open-source AI models adopt a hierarchical licensing framework encompassing global licenses and component licenses (</strong>Code, </strong>Weights, </strong>Data), 
+  open-source AI models adopt a hierarchical licensing framework encompassing global licenses and component licenses (<strong>Code, Weights, Data</strong>), 
   along with novel clauses such as technical constraints, commercial restrictions, and ethical responsibilities.
   These unique characteristics render conventional license compatibility detection tools ineffective. <br/>
-  &nbsp;&nbsp;&nbsp;To address the above limitations, in this paper, we developed a technique,
-  <a href="https://slimming-fat.github.io/SLIMMING/"><strong>SLIMMING</strong></a>, to remove bloated dependencies from software
-  projects reliably. Slimming statically analyzes the Java reflections
-  that are commonly leveraged by <strong>popular frameworks</strong> (e.g., Spring
-  Boot) and resolves the reflective targets via parsing <strong>configuration
-  files</strong> (*.xml, *.yml and *.properties). By <strong>modeling string manipulations</strong>,
-  Slimming fully resolves the string arguments of our
-  concerned reflection APIs to identify all the required dependencies.
-  More importantly, it helps developers analyze the debloating solutions
-  by <strong>weighing the benefits against the costs of dependency
-  management</strong>.<br/>
-  &nbsp;&nbsp;&nbsp;Our evaluation results show that the static reflection
-  analysis capability of Slimming outperforms all the other existing
-  techniques with 97.0% of Precision and 98.8% of Recall. Compared
-  with the prior debloating techniques, Slimming can reliably remove
-  the bloated dependencies with a 100% test passing ratio and improve
-  the rationality of debloating solutions. In our large-scale study in
-  the Maven ecosystem, Slimming reported 484 bloated dependencies
-  to 66 open-source projects. 38 reports (57.6%) have been confirmed
-  by developers.
+  &nbsp;&nbsp;&nbsp;This paper introduces
+  <a href="https://liscanai.github.io//SLIMMING/"><strong>LiScan.AI</strong></a>, the first LLM-powered framework detecting license incompatibilities for AI artifacts through: 
+  (1) \emph{License-aware Model Derivation} (LMD) Graphs modeling cross-model dependencies, 
+  (2) legal-validated SPDX/AI license term taxonomies, and
+  (3) LLM-powered semantic analysis of unstructured text. 
+  It identifies conflicts in standard obligations and AI-specific constraints (technical/commercial/ethical), 
+  integrating insights from evolving AI licensing paradigms.<br/>
+  &nbsp;&nbsp;&nbsp;Our evaluation results show that
+  <strong>LiScan.AI</strong> significantly outperforms existing approaches (achieving 89.7% Precision and 87.8% Recall) in detecting license incompatibilities. 
+  Our analysis of 1,528,095 models reveals widespread issues, with 37.5% of global-component license pairs and 80.7% of derivative models showing incompatibilities. 
+  In real-world validation, we reported <strong>114 issues detected by LiScan.AI to Hugging Face developers</strong>, 
+  receiving responses on 35 cases - with 28 (80.0\%) confirming the identified incompatibilities.
+  This demonstrates LiScan.AI's practical effectiveness in raising awareness and verifying compliance risks in the AI ecosystem.
 </div>
 
   <hr>
@@ -57,7 +50,7 @@ layout: page
 
           <span>
               <a href="https://slimming-fat.github.io/Download-Datasets">
-                  <strong>Download the dataSets<br></strong>
+                  <strong>Download the datasets<br></strong>
               </a>
           </span>
       </div>
