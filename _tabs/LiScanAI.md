@@ -6,7 +6,7 @@ order: 1
 
 ## Step 1: DownLoads
 
-[**Slimming**](https://github.com/slimming-fat/slimming-fat.github.io/blob/master/Slimming/tools.7z)
+[**LiScanAI**](https://github.com/slimming-fat/slimming-fat.github.io/blob/master/Slimming/tools.7z)
 
 
 ## Step 2: Install
