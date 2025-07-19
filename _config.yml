@@ -26,7 +26,7 @@ tagline: Slimming Configuration Explore # it will display as the sub-title
 #   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://LiScanAI.github.io'
+url: 'https://liscanai.github.io/'
 
 github:
   username: LiScanAI # change to your github username
