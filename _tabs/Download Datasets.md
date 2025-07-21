@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 3
 ---
 ## Input of Tamiflex
 > Conforms to the Tamiflex input specification(Executable Jar)
