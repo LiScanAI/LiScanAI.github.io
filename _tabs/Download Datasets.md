@@ -3,29 +3,35 @@
 icon: fas fa-info-circle
 order: 3
 ---
-## Input of Tamiflex
-> Conforms to the Tamiflex input specification(Executable Jar)
-> * 6 large DaCapo datasets (2006-10-MR2)
-> * 37 Java projects(**100% test coverage for byte code instructions**)
+# Experimental datasets
+
+## Download datasets
+## RQ1
+> we collected data from models meeting four criteria: 
+> * README files documenting component licenses and clauses (testing unstructured data extraction); 
+> * Derivation from existing base models (enabling compatibility analysis);
+> * Use of at least one AI license (validating AI-specific clause comprehension);
+> * 1,000+ downloads (balancing representativeness and manual review costs).
 {: .prompt-tip }
-[**Download this dataset as input to Tamiflex**](https://github.com/slimming-fat/slimming-fat.github.io/tree/master/data/RQ1 dataSets)
-## Tamiflex Results
-> TamiFlex captures 3,520 reflective targets\\
-> **Type 1**: Non-constant string arguments of classreceiving methods\\
-> **Type 2**: Constant string arguments of class-receiving methods\\
-> **Type 3**: Framework configuration files\\
-> **Type 4**: Annotations\\
-> **Others**: Other manners (e.g., retrieving from the Internet)
+[**Download datasets in RQ1**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/RQ1.csv)
+## RQ2
+```
+RQ2: Hierachical Licensing Status: LiScan.AI extracted primary licenses and additional clauses, enabling thorough consistency analysis between global and component licenses. 28601 IDs filtered on the Hugging Face used in Structured Analytic Hierarchy Process
+```
 {: .prompt-tip }
-[**Download this dataset used in RQ1**](https://github.com/slimming-fat/slimming-fat.github.io/tree/master/data/RQ1-tamiflex.xlsx)
-## Maven project
-> 40 projects(**100% test coverage for byte code instructions**)
+[**Download datasets in RQ2**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/RQ2.zip)
+## RQ3
+> RQ3: Large scale analysis of 184394 IDs used on the Hugging Face platform
 {: .prompt-tip }
-[**Download this dataset used in RQ2**](https://github.com/slimming-fat/slimming-fat.github.io/tree/master/data/RQ2 dataSets)
-## Large-scale analysis
-> Collect the conditions for the Java project
-> * Popularity: more than 5 Stars
-> * Complexity: more than five direct dependencies
+
+[**Download datasets in RQ3**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/RQ3.csv)
+
+## Download Ground truth
+
+> RQ1_Ground truth: 
+From 160 qualifying models, manual analysis identified 26 distinct licenses—including 17 AI licenses (major official and custom variants), 9 SPDX licenses (common on Hugging Face), and 12 additional clauses.
 {: .prompt-tip }
-[**Download this dataset used in large-scale analysis**](https://github.com/slimming-fat/slimming-fat.github.io/tree/master/data/RQ3-large-scale study.xlsx)\\
-[**Download this dataset used in RQ3**](https://github.com/slimming-fat/slimming-fat.github.io/tree/master/data/RQ3 ISSUE REPORTS.xlsx)
+[**Download 26 licenses in RQ1**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/ground%20truth%E8%AE%B8%E5%8F%AF%E8%AF%81%E6%96%87%E6%A1%A3.zip)
+
+[**Download license terms in RQ1**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/ground_truth_rq1.xlsx)
+
