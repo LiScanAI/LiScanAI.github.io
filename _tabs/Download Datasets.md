@@ -5,7 +5,6 @@ order: 3
 ---
 # Experimental datasets
 
-## Download datasets
 ## RQ1
 > we collected data from models meeting four criteria: 
 > * README files documenting component licenses and clauses (testing unstructured data extraction); 
