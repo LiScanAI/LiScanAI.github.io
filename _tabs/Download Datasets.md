@@ -14,9 +14,9 @@ order: 3
 {: .prompt-tip }
 [**Download datasets in RQ1**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/RQ1.csv)
 ## RQ2
-```
+
 RQ2: Hierachical Licensing Status: LiScan.AI extracted primary licenses and additional clauses, enabling thorough consistency analysis between global and component licenses. 28601 IDs filtered on the Hugging Face used in Structured Analytic Hierarchy Process
-```
+
 {: .prompt-tip }
 [**Download datasets in RQ2**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/RQ2.zip)
 ## RQ3
@@ -25,14 +25,14 @@ RQ2: Hierachical Licensing Status: LiScan.AI extracted primary licenses and addi
 
 [**Download datasets in RQ3**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/RQ3.csv)
 ## RQ4
-We submitted 114 issue reports covering 7 types of incompatible license combinations: 
->(1) AI license → AI license (10/114);
->(2) SPDX license → SPDX license (12/114);
->(3) SPDX license → AI license (58/114);
->(4) AI license → SPDX license (11/114);
->(5) Custom license → AI/SPDX license (6/114);
->(6) AI/SPDX license → Custom license (3/114);
->(7) derivative model or base model lack license declarations (14/114)
+We submitted 114 issue reports covering 7 types of incompatible license combinations: 
+> * (1) AI license → AI license (10/114);
+> * (2) SPDX license → SPDX license (12/114);
+> * (3) SPDX license → AI license (58/114);
+> * (4) AI license → SPDX license (11/114);
+> * (5) Custom license → AI/SPDX license (6/114);
+> * (6) AI/SPDX license → Custom license (3/114);
+> * (7) derivative model or base model lack license declarations (14/114)
 {: .prompt-tip }
 
 [**Download datasets in RQ4**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/RQ4.xlsx)
