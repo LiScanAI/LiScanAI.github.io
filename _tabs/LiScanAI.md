@@ -30,12 +30,13 @@ legally validated term taxonomies, and semantic analysis to detect incompatibili
 
 > Copy **Liscan.exe** to any directory on your system.
 {: .prompt-tip }
+
 3.Configure Liscan Database
 
  > * Install **ailicense** on your system.
-  
  > * Download the database of Liscan.
-{: .prompt-tip } 
+{: .prompt-tip }
+
  4.Run Liscan
 
 Open a command line window in the directory where main.exe is located and run:
