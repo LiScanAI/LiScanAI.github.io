@@ -1,1 +1,0 @@
- mvn install:install-file "-Dfile=slimming-1.0.jar" "-DgroupId=neu.lab" "-DartifactId=slimming" "-Dversion=1.0" "-Dpackaging=jar" "-DpomFile=slimming-1.0.pom"
