@@ -7,10 +7,8 @@ order: 1
 
 # [**LiScanAI**](https://liscanai.github.io/)
 
-LiScan.AI, the first LLM-powered
-framework for automated detection of license incompatibilities
-for AI artifacts. It combines LMD Graphs for derivation tracking,
-legally validated term taxonomies, and semantic analysis to detect incompatibilities across 27 license terms.
+LiScan.AI, the first LLM-powered framework for automated detection of license incompatibilities
+for AI artifacts. It combines License-aware Model Derivation (LMD) Graphs for derivation tracking, legally validated SPDX/AI license term taxonomies, and LLM-powered semantic analysis to detect incompatibilities across 27 license terms.
 
 ## Supported Platforms
 
@@ -20,28 +18,31 @@ legally validated term taxonomies, and semantic analysis to detect incompatibili
 
 ## Quick Start
 
-1.Download **Liscan**
+### Step 1.Download **Liscan**
 
  Download all compressed parts listed on the [**liscan**](https://drive.google.com/drive/folders/11s-l5O47cfzuywNykRbK3cMuli1rwmqg) page, and extract them to obtain **main.exe**, **ailicense** etc.
  
 
  
-2.Install Liscan
+### Step 2.Install Liscan
 
 > Copy **Liscan.exe** to any directory on your system.
 {: .prompt-tip }
 
-3.Configure Liscan Database
+### Step 3.Configure Liscan Database
 
  > * Install **ailicense** on your system.
  > * Download the database of Liscan.
 {: .prompt-tip }
 
- 4.Run Liscan
+### Step 4.Run Liscan
 
 Open a command line window in the directory where main.exe is located and run:
 
 ```
 D:\aiscanner\dist> main.exe
 ```
+
+### Step 5.Obtain results
+
 
