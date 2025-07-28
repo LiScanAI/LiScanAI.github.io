@@ -5,7 +5,7 @@ order: 1
 
 
 
-# [**LiScanAI**](https://github.com/LiScanAI/LiScanAI.github.io/tree/main/lisacan)
+# [**LiScanAI**](https://liscanai.github.io/)
 
 LiScan.AI, the first LLM-powered
 framework for automated detection of license incompatibilities
@@ -28,14 +28,14 @@ legally validated term taxonomies, and semantic analysis to detect incompatibili
  
 2.Install Liscan
 
-Copy **Liscan.exe** to any directory on your system.
-
+> Copy **Liscan.exe** to any directory on your system.
+{: .prompt-tip }
 3.Configure Liscan Database
 
-  • Install **ailicense** on your system.
+ > * Install **ailicense** on your system.
   
-  •  Download the database of Liscan.
- 
+ > * Download the database of Liscan.
+{: .prompt-tip } 
  4.Run Liscan
 
 Open a command line window in the directory where main.exe is located and run:
