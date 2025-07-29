@@ -45,4 +45,10 @@ D:\aiscanner\dist> main.exe
 
 ### Step 5.Obtain results
 
+ > You can view the results in the following ways:
+ > * View the folder for each model under test in the output_demo folder.
+>  * Each folder for each model under test contains folders for several test pairs.
+>  * Each folder for each test pair contains documentation on the test steps.
+>  * The output file output_demo.csv summarizes the results.
+{: .prompt-tip }
 
