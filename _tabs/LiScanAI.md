@@ -26,13 +26,14 @@ for AI artifacts. It combines License-aware Model Derivation (LMD) Graphs for de
  
 ### Step 2.Install Liscan
 
-> Copy **Liscan.exe** to any directory on your system.
+> Copy **main.exe** to any directory on your system.
 {: .prompt-tip }
 
-### Step 3.Configure Liscan Database
+### Step 3.Configure Liscan Data
 
  > * Install **ailicense** on your system.
- > * Download the database of Liscan.
+ > * Download the datasets of Liscan.
+>  * Add it to the **same directory** as main.exe.
 {: .prompt-tip }
 
 ### Step 4.Run Liscan
