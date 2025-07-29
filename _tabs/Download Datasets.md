@@ -5,6 +5,16 @@ order: 3
 ---
 # Experimental datasets
 
+[**Download datasets in RQ4**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/RQ4.xlsx)
+## Download Ground truth
+
+> RQ1_Ground truth: 
+From 160 qualifying models, manual analysis identified 26 distinct licenses—including 17 AI licenses (major official and custom variants), 9 SPDX licenses (common on Hugging Face), and 12 additional clauses.
+{: .prompt-tip }
+[**Download 26 licenses in RQ1**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/ground%20truth%E8%AE%B8%E5%8F%AF%E8%AF%81%E6%96%87%E6%A1%A3.zip)
+
+[**Download license terms in RQ1**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/ground_truth_rq1.xlsx)
+
 ## RQ1
 > we collected data from models meeting four criteria: 
 > * README files documenting component licenses and clauses (testing unstructured data extraction); 
@@ -35,13 +45,5 @@ We submitted 114 issue reports covering 7 types of incompatible license combinat
 > * (7) derivative model or base model lack license declarations (14/114)
 {: .prompt-tip }
 
-[**Download datasets in RQ4**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/RQ4.xlsx)
-## Download Ground truth
 
-> RQ1_Ground truth: 
-From 160 qualifying models, manual analysis identified 26 distinct licenses—including 17 AI licenses (major official and custom variants), 9 SPDX licenses (common on Hugging Face), and 12 additional clauses.
-{: .prompt-tip }
-[**Download 26 licenses in RQ1**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/ground%20truth%E8%AE%B8%E5%8F%AF%E8%AF%81%E6%96%87%E6%A1%A3.zip)
-
-[**Download license terms in RQ1**](https://github.com/LiScanAI/LiScanAI.github.io/blob/main/datasets/ground_truth_rq1.xlsx)
 
