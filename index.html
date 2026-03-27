@@ -72,6 +72,7 @@
       content: '';
       position: absolute; inset: 0;
       background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
     }
     .hero-badge {
       display: inline-block;
@@ -102,13 +103,17 @@
       margin-bottom: 36px;
       letter-spacing: 0.3px;
     }
-    .hero-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .hero-buttons {
+      display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+      position: relative; z-index: 10;
+    }
     .btn {
       display: inline-flex; align-items: center; gap: 7px;
       padding: 10px 22px; border-radius: 8px;
       font-size: 0.88rem; font-weight: 600;
       text-decoration: none; transition: all .2s;
       cursor: pointer; border: none;
+      position: relative; z-index: 10;
     }
     .btn-primary {
       background: white; color: var(--purple);
@@ -463,10 +468,9 @@
   </p>
   <p class="hero-venue">📄 IEEE Transactions on Software Engineering, Vol. 14, No. 8, February 2026</p>
   <div class="hero-buttons">
-    <a href="https://liscanai.github.io/" class="btn btn-primary">🌐 Project Page</a>
-    <a href="https://liscan-ai.com/" class="btn btn-green">🔧 Try LISCAN.AI</a>
-    <a href="#" class="btn btn-outline">📑 Paper PDF</a>
-    <a href="#" class="btn btn-outline">💾 Dataset</a>
+    <a href="https://liscanai.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🌐 Project Page</a>
+    <a href="https://liscan-ai.com/" target="_blank" rel="noopener noreferrer" class="btn btn-green">🔧 Try LISCAN.AI</a>
+    <a href="https://liscanai.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">💾 Dataset</a>
   </div>
 </header>
 
@@ -583,15 +587,12 @@
     Formulated through collaborative analysis of 82 AI licenses with senior attorneys.
     These rules govern compatibility between four license types across derivation relationships.
   </p>
-
-  <!-- License Type Legend -->
   <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:28px; max-width:1100px; margin-left:auto; margin-right:auto;">
     <span class="badge badge-sr">SR-AI: Strongly Restrictive (e.g. OpenRAIL, Gemma)</span>
     <span class="badge badge-wr">WR-AI: Weakly Restrictive (e.g. LLaMA 2/3)</span>
     <span class="badge badge-perm">Permissive SPDX (e.g. MIT, Apache 2.0)</span>
     <span class="badge badge-copy">Copyleft SPDX (e.g. GPL, LGPL)</span>
   </div>
-
   <div class="lca-wrapper">
     <table class="lca-table">
       <thead>
@@ -853,7 +854,6 @@
       </div>
       <div class="progress-bar"><div class="progress-fill" style="width:65.7%;background:#ccc"></div></div>
     </div>
-
     <div class="result-card green-card">
       <h3>📊 Landscape of AI Licensing (RQ2)</h3>
       <div class="metric-row">
@@ -881,7 +881,6 @@
         <span class="metric-val">59.9%</span>
       </div>
     </div>
-
     <div class="result-card blue-card">
       <h3>⚠️ State of Incompatibility (RQ3)</h3>
       <div class="metric-row">
@@ -905,7 +904,6 @@
         <span class="metric-val">1,528,095</span>
       </div>
     </div>
-
     <div class="result-card orange-card">
       <h3>🔬 LLM Comparison (Phase 2: Compat. Detection)</h3>
       <div class="metric-row">
@@ -1012,8 +1010,10 @@
     <div class="contrib-card">
       <h3>📦 Reproduction Package</h3>
       <p>
-        Publicly released resources on <a href="https://liscanai.github.io/" style="color:#A8D8FF">liscanai.github.io</a>:
-        (1) Available LISCAN.AI tool at <a href="https://liscan-ai.com/" style="color:#A8D8FF">liscan-ai.com</a>.
+        Publicly released resources on
+        <a href="https://liscanai.github.io/" target="_blank" rel="noopener noreferrer" style="color:#A8D8FF">liscanai.github.io</a>:
+        (1) Available LISCAN.AI tool at
+        <a href="https://liscan-ai.com/" target="_blank" rel="noopener noreferrer" style="color:#A8D8FF">liscan-ai.com</a>.
         (2) Ground Truth Dataset with 415 license combinations and 1,597 incompatibility issues.
       </p>
     </div>
@@ -1033,21 +1033,25 @@
   <div class="section-label">Citation</div>
   <h2>Cite This Work</h2>
   <p class="section-desc">If you find LISCAN.AI useful in your research, please consider citing our paper.</p>
-  <div class="cite-box">
+  <div class="cite-box" id="citeBox">
     <button class="cite-copy" onclick="
-      navigator.clipboard.writeText(document.querySelector('.cite-box').innerText.replace('Copy','').trim());
-      this.textContent='Copied!';
-      setTimeout(()=>this.textContent='Copy',2000);
+      const text = document.getElementById('citeText').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        this.textContent = 'Copied!';
+        setTimeout(() => this.textContent = 'Copy', 2000);
+      });
     ">Copy</button>
-    <span class="cite-brace">@article{</span><span class="cite-val">liscanai2026</span>,<br/>
-    &nbsp;&nbsp;<span class="cite-key">title</span>     = {<span class="cite-val">The New Frontier of AI Licensing: Detecting License Incompatibilities for AI Models</span>},<br/>
-    &nbsp;&nbsp;<span class="cite-key">journal</span>   = {<span class="cite-val">IEEE Transactions on Software Engineering</span>},<br/>
-    &nbsp;&nbsp;<span class="cite-key">volume</span>    = {<span class="cite-val">14</span>},<br/>
-    &nbsp;&nbsp;<span class="cite-key">number</span>    = {<span class="cite-val">8</span>},<br/>
-    &nbsp;&nbsp;<span class="cite-key">year</span>      = {<span class="cite-val">2026</span>},<br/>
-    &nbsp;&nbsp;<span class="cite-key">month</span>     = {<span class="cite-val">February</span>},<br/>
-    &nbsp;&nbsp;<span class="cite-key">note</span>      = {<span class="cite-val">Project: https://liscanai.github.io/ | Tool: https://liscan-ai.com/</span>}<br/>
-    <span class="cite-brace">}</span>
+    <div id="citeText">
+      <span class="cite-brace">@article{</span><span class="cite-val">liscanai2026</span>,<br/>
+      &nbsp;&nbsp;<span class="cite-key">title</span>     = {<span class="cite-val">The New Frontier of AI Licensing: Detecting License Incompatibilities for AI Models</span>},<br/>
+      &nbsp;&nbsp;<span class="cite-key">journal</span>   = {<span class="cite-val">IEEE Transactions on Software Engineering</span>},<br/>
+      &nbsp;&nbsp;<span class="cite-key">volume</span>    = {<span class="cite-val">14</span>},<br/>
+      &nbsp;&nbsp;<span class="cite-key">number</span>    = {<span class="cite-val">8</span>},<br/>
+      &nbsp;&nbsp;<span class="cite-key">year</span>      = {<span class="cite-val">2026</span>},<br/>
+      &nbsp;&nbsp;<span class="cite-key">month</span>     = {<span class="cite-val">February</span>},<br/>
+      &nbsp;&nbsp;<span class="cite-key">note</span>      = {<span class="cite-val">Project: https://liscanai.github.io/ | Tool: https://liscan-ai.com/</span>}<br/>
+      <span class="cite-brace">}</span>
+    </div>
   </div>
 </section>
 
@@ -1055,8 +1059,8 @@
 <footer>
   <p>
     LISCAN.AI &nbsp;·&nbsp;
-    <a href="https://liscanai.github.io/">Project Page</a> &nbsp;·&nbsp;
-    <a href="https://liscan-ai.com/">Online Tool</a> &nbsp;·&nbsp;
+    <a href="https://liscanai.github.io/" target="_blank" rel="noopener noreferrer">Project Page</a> &nbsp;·&nbsp;
+    <a href="https://liscan-ai.com/" target="_blank" rel="noopener noreferrer">Online Tool</a> &nbsp;·&nbsp;
     IEEE Transactions on Software Engineering, Vol. 14, No. 8, February 2026
   </p>
   <p style="margin-top:8px; font-size:0.78rem; opacity:0.6;">
