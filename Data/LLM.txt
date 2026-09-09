@@ -1,0 +1,11 @@
+1. GPT-5.1
+Model name: GPT-5.1
+Official access link: https://developers.openai.com/api/docs/models/gpt-5.1?utm_source=chatgpt.com 
+
+2. Gemini-3.1-pro
+Model name: Gemini 3.1 Pro Preview
+Official access link: https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview
+
+3. DeepSeek-V3.2
+Model: DeepSeek-V3.2
+Official access link: https://www.deepseek.com/en/news/deepseek-v3-2/?utm_source=chatgpt.com
